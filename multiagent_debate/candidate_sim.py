@@ -1,21 +1,23 @@
-import tenacity
+import os
 from typing import List
-from langchain.chat_models import ChatOpenAI
-from langchain.callbacks import get_openai_callback
+
 import numpy as np
+import openai
+import tenacity
+from dotenv import load_dotenv
+from langchain.callbacks import get_openai_callback
+from langchain.chat_models import ChatOpenAI
 from langchain.schema import (
     HumanMessage,
     SystemMessage,
 )
+
+import simulations
 from simulations import (
     DialogueAgent,
     DialogueSimulator,
     BiddingDialogueAgent,
 )
-import simulations
-import os
-import openai
-from dotenv import load_dotenv
 
 # --- CONSTANTS SETUP ---
 load_dotenv()

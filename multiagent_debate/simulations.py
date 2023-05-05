@@ -1,7 +1,8 @@
 # Langchain simulation tutorial
 
-from langchain import PromptTemplate
 from typing import List, Callable
+
+from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import RegexParser
 from langchain.schema import (

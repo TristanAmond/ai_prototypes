@@ -1,5 +1,6 @@
-from dotenv import load_dotenv
 import streamlit as st
+from dotenv import load_dotenv
+
 import candidate_sim
 
 # Load the .env file
